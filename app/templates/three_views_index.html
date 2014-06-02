@@ -1,0 +1,31 @@
+<!-- three_views_index.html -->
+<!-- lead (and only) developer: Bobby Joe 3.0 -->
+
+<html>
+
+<!-- create a space for the operating insturctions for how the webpage should look -->
+	<head>
+		<title> View One </title>
+		<link rel="stylesheet", type="text/css", href="{{ url_for('static', filename='three_views_style_1.css') }}"
+
+<!-- close the operating instructions space -->
+	</head>
+
+
+<!-- create a space to code/construct the actual webpage -->
+	<body>
+		<h1> This is the first view </h1>
+		<h2> Other Views </h2>
+		<ul>
+			<li><div id="view_one"><a href="{{ url_for('view_1') }}"> View One </a></div></li>
+			<li><a href="{{ url_for('view_2') }}"> View Two </a></li>
+			<li><a href="{{ url_for('view_3') }}"> View Three </a></li>
+<!-- close the space to code/construct the actual webpage -->
+	</body>
+
+
+
+
+
+<!-- Let the computer know you are done writing in HTML -->
+</html>
